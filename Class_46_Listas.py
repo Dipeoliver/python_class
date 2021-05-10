@@ -1,3 +1,5 @@
+# tupla e uma estrutura indexada
+
 lista=[1,2,3,4,5,6,7,8]
 print(lista)  
 print(lista[::-1]) # inverter a  lista
