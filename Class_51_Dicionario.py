@@ -13,7 +13,8 @@ pessoas.update({'idade' : 40,'sexo':'M'}) # update de itens no dicionario
 print(pessoas)
 
 # não consegui deletar um item dentro da lista no dicionario
-# pessoas.popitem(pessoas['cursos']['portugues'])
+pessoas['cursos'].remove('portugues')
+print(pessoas)
 
 
 pessoas.clear()
