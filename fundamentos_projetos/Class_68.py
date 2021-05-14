@@ -7,12 +7,14 @@ import sys
 def circulo(raio):
     return round(pi * float(raio)**2,2)
 
-
-if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print(f'''\
+def help():
+    print(f'''\
             É necessário informar a area do circulo
             Sintaxe: {sys.argv[0]} <area>''')
+
+if __name__ == '__main__':
+    if len(sys.argv) < 2:    
+        help()    
     else :
         raio = sys.argv[1]
         area = circulo(raio) #passo o valor do raio como parametro e recebo o valor da função colocando em area
