@@ -3,7 +3,7 @@ def faixa_etaria(idade):
     idade = float(idade)
     if 0 <= idade < 18:           # tipo de intervalo
         return 'Menor de Idade'
-    elif idade in range(18,64):   # tipo de intervalo por range
+    elif idade in range(18,65):   # tipo de intervalo por range (65 por so vai ate 64)
         return 'Adulto'
     elif idade in range(65,100):
         return 'Idoso'
