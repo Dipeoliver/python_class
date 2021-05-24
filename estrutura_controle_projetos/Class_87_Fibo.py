@@ -1,4 +1,5 @@
 
+#!/usr/local/bin/python3
 # fibonacce -- sequencia de numeros somados ao seu antecessor.
 # exemplo
 # 0, 1, 1, 2, 3, 5, 8, 13, 21 ...

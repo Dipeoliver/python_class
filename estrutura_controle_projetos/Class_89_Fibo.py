@@ -10,11 +10,11 @@ def fibonacci(limite):
     penultimo = 0
     ultimo = 1
     print(f'{penultimo},{ultimo}')
-    while ultimo <= limite:
-        proximo = penultimo + ultimo
-        print(proximo, end=',')
-        penultimo = ultimo
-        ultimo = proximo
+    while ultimo < limite:
+        # penultimo = ultimo
+        # ultimo    = penultimo+ultimo
+        penultimo, ultimo = ultimo, penultimo+ultimo
+        print(ultimo, end=',')
 
 
 if __name__ == '__main__':
