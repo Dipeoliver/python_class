@@ -1,0 +1,33 @@
+def soma_2(a, b):
+    return a + b
+
+
+def soma_3(a, b, c):
+    return a + b+c
+
+
+def soma_n(*numeros):
+    soma = 0
+    for n in numeros:
+        soma += n
+    return soma
+
+
+if __name__ == '__main__':
+    print(soma_2(1, 2))
+    print(soma_3(1, 2, 3))
+
+    # packing
+    print('packing')
+    print(soma_n(1, ))
+    print(soma_n(1, 1))
+    print(soma_n(1, 1, 1, 1))
+
+    # o asteristico desempacota os itens
+    # unpacking
+    print('unpacking')
+    tupla_num = (1, 2, 3)
+    print(soma_3(*tupla_num))
+
+    lista_num = [1, 2, 3]
+    print(soma_3(*lista_num))
