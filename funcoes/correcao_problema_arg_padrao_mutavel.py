@@ -1,5 +1,6 @@
-def fibonaci(sequencia=[0, 1]):
-    # Uso de mutáveis como valor default (armadilha)
+def fibonaci(sequencia=None):
+    # se o primeiro item for falso retorna o segundo
+    sequencia = sequencia or [0, 1]
     sequencia.append(sequencia[-1] + sequencia[-2])
     return sequencia
 

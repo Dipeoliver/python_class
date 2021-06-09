@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+
 def fibonacci(quantidade, sequencia=(0, 1)):
     if len(sequencia) == quantidade:
         return sequencia
